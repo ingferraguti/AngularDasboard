@@ -1,20 +1,563 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+      <div class="navbar-header"><a class="navbar-brand" href="#">Brand</a><button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+      <div
+          class="collapse navbar-collapse" id="navcol-1">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="active" role="presentation"><a href="#">First Item</a></li>
+              <li role="presentation"><a href="#">Second Item</a></li>
+              <li role="presentation"><a href="#">Third Item</a></li>
+          </ul>
+          <ul class="nav navbar-nav side-nav">
+              <li class="active" role="presentation"><a href="#">First Item</a></li>
+              <li role="presentation"><a href="#">Second Item</a></li>
+              <li role="presentation"><a href="#">Third Item</a></li>
+          </ul>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
+</div>
+</nav>
+<div id="page-wrapper">
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h1>Titolo pagina</h1>
+          <ol class="breadcrumb">
+              <li><a><span>Home</span></a></li>
+              <li><a><span>Library</span></a></li>
+              <li><a><span>Data</span></a></li>
+          </ol>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <div class="panel panel-default panel-yellow">
+              <div class="panel-heading">
+                  <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><i class="glyphicon glyphicon-shopping-cart" style="font-size:60px;"></i></div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                          <div class="huge"><span>2 </span></div>
+                          <div><span>nuovi ordini</span></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="panel-body"><span class="pull-left">dettagli ...</span><span class="pull-right"><i class="glyphicon glyphicon-circle-arrow-right"></i> </span></div>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <div class="panel panel-default panel-red">
+              <div class="panel-heading">
+                  <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><i class="glyphicon glyphicon-warning-sign" style="font-size:60px;"></i></div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                          <div class="huge"><span>2 </span></div>
+                          <div><span>rosso </span></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="panel-body"><span class="pull-left">dettagli ...</span><span class="pull-right"><i class="glyphicon glyphicon-circle-arrow-right"></i> </span></div>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <div class="panel panel-default panel-green">
+              <div class="panel-heading default">
+                  <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><i class="glyphicon glyphicon-tasks" style="font-size:60px;"></i></div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                          <div class="huge"><span>4 </span></div>
+                          <div><span> lavorazioni</span></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="panel-body"><span class="pull-left">dettagli ...</span><span class="pull-right"><i class="glyphicon glyphicon-circle-arrow-right"></i> </span></div>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <div class="panel panel-default panel-primary">
+              <div class="panel-heading default">
+                  <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><i class="glyphicon glyphicon-random" style="font-size:60px;"></i></div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                          <div class="huge"><span>4 </span></div>
+                          <div><span> spedizioni</span></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="panel-body"><span class="pull-left">dettagli ...</span><span class="pull-right"><i class="glyphicon glyphicon-circle-arrow-right"></i> </span></div>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Tabella semplice ( con hover) </h3>
+              </div>
+              <div class="panel-body">
+                  <div class="table-responsive">
+                      <table class="table table-hover">
+                          <thead>
+                              <tr>
+                                  <th>Column 1</th>
+                                  <th>Column 1</th>
+                                  <th>Column 2</th>
+                                  <th>Column 2</th>
+                                  <th>Column 2</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>Cell 1</td>
+                                  <td>Cell 2</td>
+                                  <td>Cell 2</td>
+                                  <td>Cell 2</td>
+                                  <td>Cell 2</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Tabella semplice ( bordered) </h3>
+              </div>
+              <div class="panel-body">
+                  <div class="table-responsive">
+                      <table class="table table-bordered">
+                          <thead>
+                              <tr>
+                                  <th>Column 1</th>
+                                  <th>Column 1</th>
+                                  <th>Column 2</th>
+                                  <th>Column 2</th>
+                                  <th>Column 2</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>Cell 1</td>
+                                  <td>Cell 2</td>
+                                  <td>Cell 2</td>
+                                  <td>Cell 2</td>
+                                  <td>Cell 2</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3 class="panel-title">form </h3>
+              </div>
+              <div class="panel-body">
+                  <form>
+                      <div class="form-group"><input class="form-control" type="hidden"><input class="form-control" type="email"><textarea class="form-control"></textarea>
+                          <div class="radio"><label class="control-label"><input type="radio">Label</label></div>
+                          <div class="checkbox"><label class="control-label"><input type="checkbox">Label</label></div><input type="file"><input class="form-control" type="password"><input class="form-control" type="url" autofocus=""><input type="range"><input class="form-control"
+                              type="number"><input class="form-control" type="date"><input type="color"></div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Tabella semplice ( codice colore) </h3>
+              </div>
+              <div class="panel-body">
+                  <div class="table-responsive">
+                      <table class="table">
+                          <thead>
+                              <tr>
+                                  <th>Column 1</th>
+                                  <th>Column 1</th>
+                                  <th>Column 2</th>
+                                  <th>Column 2</th>
+                                  <th>Column 2</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr class="success">
+                                  <td>Cell 1</td>
+                                  <td>Cell 2</td>
+                                  <td>Cell 2</td>
+                                  <td>Cell 2</td>
+                                  <td>Cell 2</td>
+                              </tr>
+                              <tr class="warning">
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                              <tr class="danger">
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Tabella semplice (striped) </h3>
+              </div>
+              <div class="panel-body">
+                  <div class="table-responsive">
+                      <table class="table table-striped">
+                          <thead>
+                              <tr>
+                                  <th>Column 1</th>
+                                  <th>Column 1</th>
+                                  <th>Column 2</th>
+                                  <th>Column 2</th>
+                                  <th>Column 2</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>Cell 1</td>
+                                  <td>Cell 2</td>
+                                  <td>Cell 2</td>
+                                  <td>Cell 2</td>
+                                  <td>Cell 2</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                              <tr>
+                                  <td>Cell 3</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                                  <td>Cell 4</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3 class="panel-title">login </h3>
+              </div>
+              <div class="panel-body">
+                  <div class="login-card"><img src="assets/img/avatar_2x.png" class="profile-img-card">
+                      <p class="profile-name-card"> </p>
+                      <form class="form-signin"><span class="reauth-email"> </span><input class="form-control" type="email" required="" placeholder="Email address" autofocus="" id="inputEmail"><input class="form-control" type="password" required="" placeholder="Password"
+                              id="inputPassword">
+                          <div class="checkbox">
+                              <div class="checkbox"><label><input type="checkbox">Remember me</label></div>
+                          </div><button class="btn btn-primary btn-block btn-lg btn-signin" type="submit">Sign in</button></form><a href="#" class="forgot-password">Forgot your password?</a></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h2>tabella grande con azioni</h2>
+          <div class="table-responsive">
+              <table class="table table-striped table-bordered">
+                  <thead>
+                      <tr>
+                          <th>Column 1</th>
+                          <th>Column 1</th>
+                          <th>Column 2</th>
+                          <th>Column 2</th>
+                          <th>Column 2</th>
+                          <th>Column 2</th>
+                          <th>Column 2</th>
+                          <th>azioni </th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Cell 1</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>
+                              <div class="btn-group" role="group"><button class="btn btn-primary btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-search"></i></button><button class="btn btn-success btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-ok"></i></button>
+                                  <button
+                                      class="btn btn-warning btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-pencil"></i></button><button class="btn btn-danger btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-remove"></i></button></div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>Cell 1</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>
+                              <div class="btn-group" role="group"><button class="btn btn-primary btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-search"></i></button><button class="btn btn-success btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-ok"></i></button>
+                                  <button
+                                      class="btn btn-warning btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-pencil"></i></button><button class="btn btn-danger btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-remove"></i></button></div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>Cell 1</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>
+                              <div class="btn-group" role="group"><button class="btn btn-primary btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-search"></i></button><button class="btn btn-success btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-ok"></i></button>
+                                  <button
+                                      class="btn btn-warning btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-pencil"></i></button><button class="btn btn-danger btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-remove"></i></button></div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>Cell 1</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>
+                              <div class="btn-group" role="group"><button class="btn btn-primary btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-search"></i></button><button class="btn btn-success btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-ok"></i></button>
+                                  <button
+                                      class="btn btn-warning btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-pencil"></i></button><button class="btn btn-danger btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-remove"></i></button></div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>Cell 1</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>
+                              <div class="btn-group" role="group"><button class="btn btn-primary btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-search"></i></button><button class="btn btn-success btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-ok"></i></button>
+                                  <button
+                                      class="btn btn-warning btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-pencil"></i></button><button class="btn btn-danger btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-remove"></i></button></div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>Cell 1</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>
+                              <div class="btn-group" role="group"><button class="btn btn-primary btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-search"></i></button><button class="btn btn-success btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-ok"></i></button>
+                                  <button
+                                      class="btn btn-warning btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-pencil"></i></button><button class="btn btn-danger btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-remove"></i></button></div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>Cell 1</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>Cell 2</td>
+                          <td>
+                              <div class="btn-group" role="group"><button class="btn btn-primary btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-search"></i></button><button class="btn btn-success btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-ok"></i></button>
+                                  <button
+                                      class="btn btn-warning btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-pencil"></i></button><button class="btn btn-danger btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-remove"></i></button></div>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3 class="panel-title">morris graph</h3>
+              </div>
+              <div class="panel-body">
+                  <div id="morris-area-chart"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3 class="panel-title">morris donut graph</h3>
+              </div>
+              <div class="panel-body">
+                  <div id="morris-donut-chart"></div>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Task panel</h3>
+              </div>
+              <div class="panel-body">
+                  <ul class="list-group">
+                      <li class="list-group-item"><span>List Group Item 1</span><span class="badge" style="background-color:rgb(237,31,31);">badge 1</span></li>
+                      <li class="list-group-item"><span>List Group Item 2</span></li>
+                      <li class="list-group-item"><span>List Group Item 1</span><span class="badge" style="background-color:rgb(63,162,46);">badge 2</span></li>
+                      <li class="list-group-item"><span>List Group Item 2</span></li>
+                      <li class="list-group-item"><span>List Group Item 1</span><span class="badge">badge 1</span></li>
+                      <li class="list-group-item"><span>List Group Item 1</span><span class="badge">badge 2</span></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3 class="panel-title">morris line graph</h3>
+              </div>
+              <div class="panel-body">
+                  <div id="morris-line-chart"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
