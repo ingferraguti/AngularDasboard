@@ -11,12 +11,13 @@ import { Component, OnInit, Input } from '@angular/core';
   </div>
 </div>`
 })
+
 export class PanelComponent implements OnInit {
+ 
   @Input() title: string;
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {  }
 
 }

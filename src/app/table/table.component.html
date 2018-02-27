@@ -1,5 +1,14 @@
 <div class="table-responsive">
   <table class="table" [ngClass] ="tableClass">
-      <ng-content></ng-content>
+    <thead>
+      <tr>
+          <th *ngFor="let h of heading">{{h}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let obj of data">
+          <td *ngFor="let h of heading" >{{obj[h]}}</td>
+      </tr>
+    </tbody>
   </table>
 </div>

@@ -89,192 +89,28 @@
   <div class="row">
       <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
             <matteferrag-panel title="table responsive con hover">
-                <matteferrag-table [tableClass]="['table-hover', 'table-bordered', 'table-striped']">
-                    <thead>
-                        <tr>
-                            <th>ciao 1</th>
-                            <th>Column 1</th>
-                            <th>Column 2</th>
-                            <th>Column 2</th>
-                            <th>Column 2</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                            <td>Cell 1</td>
-                            <td>Cell 2</td>
-                            <td>Cell 2</td>
-                            <td>Cell 2</td>
-                            <td>Cell 2</td>
-                        </tr>
-                        <tr>
-                            <td>Cell 3</td>
-                            <td>Cell 4</td>
-                            <td>Cell 4</td>
-                            <td>Cell 4</td>
-                            <td>Cell 4</td>
-                        </tr>
-                        <tr>
-                            <td>Cell 3</td>
-                            <td>Cell 4</td>
-                            <td>Cell 4</td>
-                            <td>Cell 4</td>
-                            <td>Cell 4</td>
-                        </tr>
-                        <tr>
-                            <td>Cell 3</td>
-                            <td>Cell 4</td>
-                            <td>Cell 4</td>
-                            <td>Cell 4</td>
-                            <td>Cell 4</td>
-                        </tr>
-                      </tbody>
+                <matteferrag-table [tableClass]="['table-hover', 'table-bordered', 'table-striped']" [heading]="headingexample" [data]="exampletabledata">
+                    
                 </matteferrag-table>
             </matteferrag-panel>
       </div>
       <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                  <h3 class="panel-title">Tabella semplice ( bordered) </h3>
-              </div>
-              <div class="panel-body">
-                  <div class="table-responsive">
-                      <table class="table table-bordered">
-                          <thead>
-                              <tr>
-                                  <th>Column 1</th>
-                                  <th>Column 1</th>
-                                  <th>Column 2</th>
-                                  <th>Column 2</th>
-                                  <th>Column 2</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              <tr>
-                                  <td>Cell 1</td>
-                                  <td>Cell 2</td>
-                                  <td>Cell 2</td>
-                                  <td>Cell 2</td>
-                                  <td>Cell 2</td>
-                              </tr>
-                              <tr>
-                                  <td>Cell 3</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                              </tr>
-                              <tr>
-                                  <td>Cell 3</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                              </tr>
-                              <tr>
-                                  <td>Cell 3</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </div>
-              </div>
-          </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">form </h3>
+            </div>
+            <div class="panel-body">
+                <form>
+                    <div class="form-group"><input class="form-control" type="hidden"><input class="form-control" type="email"><textarea class="form-control"></textarea>
+                        <div class="radio"><label class="control-label"><input type="radio">Label</label></div>
+                        <div class="checkbox"><label class="control-label"><input type="checkbox">Label</label></div><input type="file"><input class="form-control" type="password"><input class="form-control" type="url" autofocus=""><input type="range"><input class="form-control"
+                            type="number"><input class="form-control" type="date"><input type="color"></div>
+                </form>
+            </div>
+        </div>
       </div>
   </div>
-  <div class="row">
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                  <h3 class="panel-title">form </h3>
-              </div>
-              <div class="panel-body">
-                  <form>
-                      <div class="form-group"><input class="form-control" type="hidden"><input class="form-control" type="email"><textarea class="form-control"></textarea>
-                          <div class="radio"><label class="control-label"><input type="radio">Label</label></div>
-                          <div class="checkbox"><label class="control-label"><input type="checkbox">Label</label></div><input type="file"><input class="form-control" type="password"><input class="form-control" type="url" autofocus=""><input type="range"><input class="form-control"
-                              type="number"><input class="form-control" type="date"><input type="color"></div>
-                  </form>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                  <h3 class="panel-title">Tabella semplice ( codice colore) </h3>
-              </div>
-              <div class="panel-body">
-                  <div class="table-responsive">
-                      <table class="table">
-                          <thead>
-                              <tr>
-                                  <th>Column 1</th>
-                                  <th>Column 1</th>
-                                  <th>Column 2</th>
-                                  <th>Column 2</th>
-                                  <th>Column 2</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              <tr class="success">
-                                  <td>Cell 1</td>
-                                  <td>Cell 2</td>
-                                  <td>Cell 2</td>
-                                  <td>Cell 2</td>
-                                  <td>Cell 2</td>
-                              </tr>
-                              <tr class="warning">
-                                  <td>Cell 3</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                              </tr>
-                              <tr class="danger">
-                                  <td>Cell 3</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                              </tr>
-                              <tr>
-                                  <td>Cell 3</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                              </tr>
-                              <tr>
-                                  <td>Cell 3</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                              </tr>
-                              <tr>
-                                  <td>Cell 3</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                              </tr>
-                              <tr>
-                                  <td>Cell 3</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                                  <td>Cell 4</td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+
   <div class="row">
       <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
           <div class="panel panel-default">
