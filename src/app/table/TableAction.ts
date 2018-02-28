@@ -1,5 +1,7 @@
 export interface TableAction {
     fa?: string;
-    action: string;
-    text: string;
+    glyphicon?: string;
+    color?: string;
+    action?: string;
+    text?: string;
   }

@@ -25,7 +25,23 @@ export class AppComponent {
       "col1":"1wweww",
       "col5":"q123dgww",
       "col3":"qw333w",
-      "col4":"qww13w"},
-    {}];
+      "col4":"qww13w"}];
 
+  exampleactions=[
+    {
+     
+      glyphicon: "search",
+      color: "primary"
+     
+    },{
+      
+      glyphicon: "ok",
+      color: "success"
+     
+    },{
+     
+      glyphicon: "pencil",
+      color: "warning"
+     
+    }];
 }

@@ -3,12 +3,15 @@
     <thead>
       <tr>
           <th *ngFor="let h of heading">{{h}}</th>
+          <th></th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let obj of data">
           <td *ngFor="let h of heading" >{{obj[h]}}</td>
+          <td><matteferrag-table-actions [actions]="actions"></matteferrag-table-actions></td>
       </tr>
+     
     </tbody>
   </table>
 </div>

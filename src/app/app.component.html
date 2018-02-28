@@ -89,7 +89,12 @@
   <div class="row">
       <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
             <matteferrag-panel title="table responsive con hover">
-                <matteferrag-table [tableClass]="['table-hover', 'table-bordered', 'table-striped']" [heading]="headingexample" [data]="exampletabledata">
+                <matteferrag-table 
+                    [tableClass]="['table-hover', 'table-bordered', 'table-striped']" 
+                    [heading]="headingexample" 
+                    [data]="exampletabledata"
+                    [actions]="exampleactions"
+                >
                     
                 </matteferrag-table>
             </matteferrag-panel>

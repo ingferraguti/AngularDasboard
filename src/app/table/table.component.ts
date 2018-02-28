@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { TableAction } from './TableAction';
 
 @Component({
   selector: 'matteferrag-table',
@@ -10,6 +11,7 @@ export class TableComponent implements OnInit {
   @Input() data : Object[];
   @Input() heading : string[];
   @Input() tableRowActions : Object[];
+  @Input() actions : TableAction[];
 
   constructor() { }
 
