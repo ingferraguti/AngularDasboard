@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { TableAction } from './TableAction';
+import { TableAction, TableEvent } from './TableModel';
 
 @Component({
   selector: 'matteferrag-table',
   templateUrl: './table.component.html'
 })
-export class TableComponent implements OnInit {
+export class TableComponent {
   
   @Input() tableClass : string[];
   @Input() data : Object[];
@@ -15,7 +15,7 @@ export class TableComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  action(e: TableEvent){
+    console.log(e);
   }
-
 }

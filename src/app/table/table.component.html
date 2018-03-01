@@ -9,9 +9,14 @@
     <tbody>
       <tr *ngFor="let obj of data">
           <td *ngFor="let h of heading" >{{obj[h]}}</td>
-          <td><matteferrag-table-actions [actions]="actions"></matteferrag-table-actions></td>
+          <td>
+            <matteferrag-table-actions 
+              [actions]="actions"
+              [row]="obj"
+              (action)="action($event)">
+            </matteferrag-table-actions>
+          </td>
       </tr>
-     
     </tbody>
   </table>
 </div>

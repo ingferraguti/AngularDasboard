@@ -29,15 +29,11 @@ export class AppComponent {
 
   exampleactions=[
     {
-     
       glyphicon: "search",
       color: "primary"
-     
     },{
-      
       glyphicon: "ok",
       color: "success"
-     
     },{
      
       glyphicon: "pencil",

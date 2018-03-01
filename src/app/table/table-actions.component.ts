@@ -1,21 +1,32 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { TableAction } from './TableAction';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { TableAction, TableHeading, TableEvent } from './TableModel';
 
 @Component({
   selector: 'matteferrag-table-actions',
   template: `
   <div class="btn-group" role="group">
-    <button *ngFor="let a of actions" class="btn btn-{{a.color}} btn-xs" type="button" style="margin:1px;"> <i class="glyphicon glyphicon-{{a.glyphicon}}"></i></button>
+    <button *ngFor="let a of actions" 
+      class="btn btn-{{a.color}} btn-xs" 
+      (click)="buttonclick(a)"
+      type="button" 
+      style="margin:1px;"> 
+        <i class="glyphicon glyphicon-{{a.glyphicon}}"></i>
+    </button>
   </div>
 `
 })
-export class TableActionsComponent implements OnInit {
+export class TableActionsComponent {
 
   @Input() actions: TableAction[];
+  @Input() row: Object;
+  @Output() action: EventEmitter<TableEvent> = new EventEmitter<TableEvent>();
 
   constructor() { }
 
-  ngOnInit() {
+  buttonclick(a){
+    return this.action.emit({
+      'action':a,
+      'row':this.row
+    })
   }
-
 }
