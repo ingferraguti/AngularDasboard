@@ -3,9 +3,12 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { PanelComponent } from './panel/panel.component';
+
 import { TableComponent } from './table/table.component';
 import { TableActionsComponent } from './table/table-actions.component';
+
+import { NavbarTopComponent } from './shared/navbar-top.component';
+import { PanelComponent } from './shared/panel.component';
 
 
 @NgModule({
@@ -13,7 +16,8 @@ import { TableActionsComponent } from './table/table-actions.component';
     AppComponent,
     PanelComponent,
     TableComponent,
-    TableActionsComponent
+    TableActionsComponent,
+    NavbarTopComponent
   ],
   imports: [
     BrowserModule

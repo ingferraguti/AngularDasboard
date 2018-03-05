@@ -1,26 +1,15 @@
-<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-      <div class="navbar-header"><a class="navbar-brand" href="#">Brand</a><button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
-      <div
-          class="collapse navbar-collapse" id="navcol-1">
-          <ul class="nav navbar-nav navbar-right">
-              <li class="active" role="presentation"><a href="#">First Item</a></li>
-              <li role="presentation"><a href="#">Second Item</a></li>
-              <li role="presentation"><a href="#">Third Item</a></li>
-          </ul>
-          <ul class="nav navbar-nav side-nav">
-              <li class="active" role="presentation"><a href="#">First Item</a></li>
-              <li role="presentation"><a href="#">Second Item</a></li>
-              <li role="presentation"><a href="#">Third Item</a></li>
-          </ul>
-</div>
-</div>
-</nav>
+<app-navbar-top
+    brand="your Brand"
+    [topMenu]="menuTop"
+    [sideMenu]="sideTop"
+    >
+</app-navbar-top>
+
 <div id="page-wrapper">
 <div class="container-fluid">
   <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h1>Titolo pagina</h1>
+          <h1>Dashboard</h1>
           <ol class="breadcrumb">
               <li><a><span>Home</span></a></li>
               <li><a><span>Library</span></a></li>
@@ -95,7 +84,6 @@
                     [data]="exampletabledata"
                     [actions]="exampleactions"
                 >
-                    
                 </matteferrag-table>
             </matteferrag-panel>
       </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'matteferrag-panel',
@@ -12,12 +12,7 @@ import { Component, OnInit, Input } from '@angular/core';
 </div>`
 })
 
-export class PanelComponent implements OnInit {
- 
+export class PanelComponent {
   @Input() title: string;
-
   constructor() { }
-
-  ngOnInit() {  }
-
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TableComponent } from './table/table.component';
+import { MenuVoice } from './Interfaces';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,31 @@ import { TableComponent } from './table/table.component';
 })
 export class AppComponent {
 
+
+  menuTop=new Array<MenuVoice>(
+      {
+        "title":"First item",
+        "path":"#"
+      },
+      {
+        "title":"Second item",
+        "path":"#"
+      }
+  );
+
+  sideTop=new Array<MenuVoice>(
+    {
+      "title":"First side item",
+      "path":"#"
+    },
+    {
+      "title":"Second side item",
+      "path":"#"
+    }
+);
+
   headingexample=["col1","col2","col3","col4"];
+
   exampletabledata=[
     {
       "col1":"qwweww",
