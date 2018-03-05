@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { TableComponent } from './table/table.component';
-import { MenuVoice } from './Interfaces';
+import { TableComponent } from './shared/table.component';
+import { MenuVoice } from './shared/Interfaces';
 
 @Component({
   selector: 'app-root',

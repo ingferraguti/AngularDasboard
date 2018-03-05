@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MenuVoice } from '../Interfaces';
+import { MenuVoice } from './Interfaces';
 
 @Component({
   selector: 'app-navbar-top',

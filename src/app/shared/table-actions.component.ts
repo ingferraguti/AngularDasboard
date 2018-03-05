@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { TableAction, TableHeading, TableEvent } from './TableModel';
+import { TableAction, TableHeading, TableEvent } from './Interfaces';
 
 @Component({
   selector: 'matteferrag-table-actions',

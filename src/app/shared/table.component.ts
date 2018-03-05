@@ -1,4 +1,10 @@
-<div class="table-responsive">
+import { Component, OnInit, Input } from '@angular/core';
+import { TableAction, TableEvent } from './Interfaces';
+
+@Component({
+  selector: 'matteferrag-table',
+  template: `
+  <div class="table-responsive">
   <table class="table" [ngClass] ="tableClass">
     <thead>
       <tr>
@@ -19,4 +25,19 @@
       </tr>
     </tbody>
   </table>
-</div>
+</div>`
+})
+export class TableComponent {
+  
+  @Input() tableClass : string[];
+  @Input() data : Object[];
+  @Input() heading : string[];
+  @Input() tableRowActions : Object[];
+  @Input() actions : TableAction[];
+
+  constructor() { }
+
+  action(e: TableEvent){
+    console.log(e);
+  }
+}
