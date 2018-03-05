@@ -9,9 +9,9 @@ import { TableActionsComponent } from './shared/table-actions.component';
 
 import { NavbarTopComponent } from './shared/navbar-top.component';
 import { PanelComponent } from './shared/panel.component';
-import { HeadingComponent } from './heading/heading.component';
-import { CardComponent } from './card/card.component';
-import { RowComponent } from './row/row.component';
+import { HeadingComponent } from './shared/heading.component';
+import { CardComponent } from './shared/card.component';
+import { RowComponent } from './shared/row.component';
 
 
 @NgModule({
