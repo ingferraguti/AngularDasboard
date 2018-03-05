@@ -9,6 +9,9 @@ import { TableActionsComponent } from './shared/table-actions.component';
 
 import { NavbarTopComponent } from './shared/navbar-top.component';
 import { PanelComponent } from './shared/panel.component';
+import { HeadingComponent } from './heading/heading.component';
+import { CardComponent } from './card/card.component';
+import { RowComponent } from './row/row.component';
 
 
 @NgModule({
@@ -17,7 +20,10 @@ import { PanelComponent } from './shared/panel.component';
     PanelComponent,
     TableComponent,
     TableActionsComponent,
-    NavbarTopComponent
+    NavbarTopComponent,
+    HeadingComponent,
+    CardComponent,
+    RowComponent
   ],
   imports: [
     BrowserModule
