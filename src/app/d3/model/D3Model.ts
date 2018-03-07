@@ -43,6 +43,10 @@ export class Node implements d3.SimulationNodeDatum {
   }
 
 
+export interface Point {
+  x:number;
+  y:number;
+}
 
 
 
@@ -65,6 +69,40 @@ export class Link implements d3.SimulationLinkDatum<Node> {
 
 
 
+export class Polygon  {
+  // Optional - defining optional implementation properties - required for relevant typing assistance
+  points: string;
+  id?: string;
+  
+  constructor(pt:Point[]) {
+      this.points=pt.map(function(d) { return [d.x,d.y].join(","); }).join(" ");;
+  }
+}
+
+
+
+/**
+ * 
+ * "points",function(d) { 
+          return d.points})
+ * 
+ * 
+ * 
+ * 
+ * */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 const FORCES = {
     LINKS: 1 / 50,
     COLLISION: 1,
@@ -77,11 +115,13 @@ const FORCES = {
   
     public nodes: Node[] = [];
     public links: Link[] = [];
+    public polygons: Polygon[] =[];
   
-    constructor(nodes, links, options: { width, height }) {
+    constructor(nodes, links, polygons, options: { width, height }) {
       this.nodes = nodes;
       this.links = links;
-  
+      this.polygons = polygons;
+
       this.initSimulation(options);
     }
   
