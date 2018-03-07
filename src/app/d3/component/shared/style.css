@@ -20,3 +20,8 @@
     stroke-width: .25em;
     stroke: rgb(235, 38, 218);
 }
+
+.polygon {
+    stroke-width: .25em;
+    stroke: rgb(25, 212, 8);
+}

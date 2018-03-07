@@ -70,8 +70,10 @@ export class Link implements d3.SimulationLinkDatum<Node> {
 
 
 export class Polygon  {
-  // Optional - defining optional implementation properties - required for relevant typing assistance
+
   points: string;
+
+  index?: number;
   id?: string;
   
   constructor(pt:Point[]) {
@@ -79,10 +81,25 @@ export class Polygon  {
   }
 }
 
+export class Rectangle {
+  x:number;
+  y:number;
+  width:number;
+  height:number;
 
+  index?: number;
+  id?: string;
+
+  constructor(x,y,w,h){
+    this.x=x;
+    this.y=y;
+    this.width=w;
+    this.height=h;
+  }
+} 
 
 /**
- * 
+ * rect
  * "points",function(d) { 
           return d.points})
  * 
