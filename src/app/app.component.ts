@@ -5,6 +5,7 @@ import { MenuVoice } from './shared/Interfaces';
 import APP_CONFIG from './app.config';
 import { Node, Link } from './d3/model/D3Model';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
