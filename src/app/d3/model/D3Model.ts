@@ -69,16 +69,25 @@ export class Link implements d3.SimulationLinkDatum<Node> {
 
 
 
-export class Polygon  {
+export class Polygon  {   /**   https://github.com/d3/d3-polygon/blob/master/README.md     */
 
   points: string;
+  vert: [number,number][];
 
   index?: number;
   id?: string;
   
   constructor(pt:Point[]) {
-      this.points=pt.map(function(d) { return [d.x,d.y].join(","); }).join(" ");;
+      this.points=pt.map(function(d) { return [d.x,d.y].join(","); }).join(" ");
+      pt.forEach(element => {        this.vert.push([element.x,element.y]);      });
   }
+
+  area(){               return d3.polygonArea(this.vert);                 }
+  centroid(){           return d3.polygonCentroid(this.vert);             }
+  hull(){               return d3.polygonHull(this.vert);                 }
+  contains(p:Point){    return d3.polygonContains(this.vert,[p.x,p.y]);   }
+  lenght(){             return d3.polygonLength(this.vert);               }
+  
 }
 
 export class Rectangle {
