@@ -79,7 +79,8 @@ export class Polygon  {   /**   https://github.com/d3/d3-polygon/blob/master/REA
   
   constructor(pt:Point[]) {
       this.points=pt.map(function(d) { return [d.x,d.y].join(","); }).join(" ");
-      pt.forEach(element => {        this.vert.push([element.x,element.y]);      });
+      this.vert = Array();
+      pt.forEach(element =>  this.vert.push([element.x,element.y]) );
   }
 
   area(){               return d3.polygonArea(this.vert);                 }
