@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Polygon, Point } from '../../model/D3Model';
+import { Polygon } from '../../model/D3Model';
 
 @Component({
   selector: '[polygonVisual]',
@@ -9,7 +9,20 @@ import { Polygon, Point } from '../../model/D3Model';
           class="polygon"
           [attr.points]="polygon.points"
           >
+
+         
+
       </svg:polygon>
+      <svg:text
+          class="polygon-text"
+          [attr.font-size]="20"
+          [attr.x]="polygon.xycentroid[0]" [attr.y]="polygon.xycentroid[1]" 
+          >
+        Area:{{ polygon.area }}
+       
+        
+        
+      </svg:text>
     </svg:g>
   `,
   styleUrls: ['./style.css']

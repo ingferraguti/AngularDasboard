@@ -20,6 +20,9 @@ import { LinkVisualComponent } from './d3/component/shared/link-visual.component
 import { D3Service } from './d3/d3.service';
 import { ZoomableDirective } from './d3/directive/zoomable.directive';
 import { DraggableDirective } from './d3/directive/draggable.directive';
+import { PolygonVisualComponent } from './d3/component/shared/polygon-visual.components';
+import { BarsComponent } from './d3/component/bars/bars.component';
+import { D3PolygonsComponent } from './d3/component/graph/d3-polygons.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +35,14 @@ import { DraggableDirective } from './d3/directive/draggable.directive';
     CardComponent,
     RowComponent,
     LinkVisualComponent,
+    PolygonVisualComponent,
     //MorrisLineChartComponent,
     GraphComponent,
     NodeVisualComponent,
     ZoomableDirective,
-    DraggableDirective
+    DraggableDirective,
+    BarsComponent,
+    D3PolygonsComponent
   ],
   imports: [
     BrowserModule

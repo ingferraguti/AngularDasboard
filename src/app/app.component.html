@@ -73,24 +73,6 @@
             </matteferrag-panel>
       </div>
       <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">form </h3>
-            </div>
-            <div class="panel-body">
-                <form>
-                    <div class="form-group"><input class="form-control" type="hidden"><input class="form-control" type="email"><textarea class="form-control"></textarea>
-                        <div class="radio"><label class="control-label"><input type="radio">Label</label></div>
-                        <div class="checkbox"><label class="control-label"><input type="checkbox">Label</label></div><input type="file"><input class="form-control" type="password"><input class="form-control" type="url" autofocus=""><input type="range"><input class="form-control"
-                            type="number"><input class="form-control" type="date"><input type="color"></div>
-                </form>
-            </div>
-        </div>
-      </div>
-  </div>
-
-  <div class="row">
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
             <matteferrag-panel title="table responsive semplice">
                     <matteferrag-table 
                         [tableClass]="[]" 
@@ -100,23 +82,9 @@
                     </matteferrag-table>
                 </matteferrag-panel>
       </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                  <h3 class="panel-title">login </h3>
-              </div>
-              <div class="panel-body">
-                  <div class="login-card"><img src="assets/img/avatar_2x.png" class="profile-img-card">
-                      <p class="profile-name-card"> </p>
-                      <form class="form-signin"><span class="reauth-email"> </span><input class="form-control" type="email" required="" placeholder="Email address" autofocus="" id="inputEmail"><input class="form-control" type="password" required="" placeholder="Password"
-                              id="inputPassword">
-                          <div class="checkbox">
-                              <div class="checkbox"><label><input type="checkbox">Remember me</label></div>
-                          </div><button class="btn btn-primary btn-block btn-lg btn-signin" type="submit">Sign in</button></form><a href="#" class="forgot-password">Forgot your password?</a></div>
-              </div>
-          </div>
-      </div>
   </div>
+
+  
   <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <matteferrag-panel title="table responsive grande">
@@ -127,13 +95,49 @@
                         [actions]="exampleactions"
                     >
                     </matteferrag-table>
-                </matteferrag-panel>
+            </matteferrag-panel>
            
       </div>
   </div>
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <d3-graph [nodes]="nodes" [links]="links"></d3-graph> 
+        <d3-bars></d3-bars> 
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <matteferrag-panel title="D3 - polygons with area">
+                    <d3-polygons [polygons]="polygons"></d3-polygons> 
+            </matteferrag-panel>
+        
+    </div>
+
+    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">login </h3>
+            </div>
+            <div class="panel-body">
+                <div class="login-card"><img src="assets/img/avatar_2x.png" class="profile-img-card">
+                    <p class="profile-name-card"> </p>
+                    <form class="form-signin"><span class="reauth-email"> </span><input class="form-control" type="email" required="" placeholder="Email address" autofocus="" id="inputEmail"><input class="form-control" type="password" required="" placeholder="Password"
+                            id="inputPassword">
+                        <div class="checkbox">
+                            <div class="checkbox"><label><input type="checkbox">Remember me</label></div>
+                        </div><button class="btn btn-primary btn-block btn-lg btn-signin" type="submit">Sign in</button></form><a href="#" class="forgot-password">Forgot your password?</a></div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <matteferrag-panel title="D3 - Force directed graph">
+                    <d3-graph [nodes]="nodes" [links]="links" ></d3-graph>  
+            </matteferrag-panel>
+       
     </div>
   </div>
   <div class="row">
@@ -176,16 +180,44 @@
               </div>
           </div>
       </div>
+
+
       <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                  <h3 class="panel-title">morris line graph</h3>
-              </div>
-              <div class="panel-body">
-                  
-              </div>
-          </div>
+          
+            <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">form </h3>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group"><input class="form-control" type="hidden"><input class="form-control" type="email"><textarea class="form-control"></textarea>
+                                <div class="radio"><label class="control-label"><input type="radio">Label</label></div>
+                                <div class="checkbox"><label class="control-label"><input type="checkbox">Label</label></div><input type="file"><input class="form-control" type="password"><input class="form-control" type="url" autofocus=""><input type="range"><input class="form-control"
+                                    type="number"><input class="form-control" type="date"><input type="color"></div>
+                        </form>
+                    </div>
+                </div>
+
       </div>
   </div>
+
+  <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 </div>

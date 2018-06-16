@@ -10,7 +10,7 @@
 
 import { Injectable, EventEmitter } from '@angular/core';
 import * as d3 from 'd3';
-import {ForceDirectedGraph, Node, Link} from './model/D3Model';
+import {ForceDirectedGraph, Node, Link, Polygon, PolygonDraw} from './model/D3Model';
 
 @Injectable()
 export class D3Service {
@@ -71,8 +71,13 @@ export class D3Service {
   /** The interactable graph we will simulate in this article
   * This method does not interact with the document, purely physical calculations with d3
   */
-  getForceDirectedGraph(nodes: Node[], links: Link[], options: { width, height }) {
-    const sg = new ForceDirectedGraph(nodes, links, options);
+  getForceDirectedGraph(nodes: Node[], links: Link[], polygons: Polygon[], options: { width, height }) {
+    const sg = new ForceDirectedGraph(nodes, links, polygons, options);
+    return sg;
+  }
+
+  getPolygonDraw(polygons: Polygon[], options: { width, height }){
+    const sg = new PolygonDraw(polygons, options);
     return sg;
   }
 }

@@ -1,35 +1,29 @@
 import { Component, Input, ChangeDetectorRef, HostListener, ChangeDetectionStrategy, OnInit, AfterViewInit } from '@angular/core';
-import { ForceDirectedGraph, Node } from '../../model/D3Model';
 import { D3Service } from '../../d3.service'
+import { PolygonDraw } from '../../model/D3Model';
 
 @Component({
-  selector: 'd3-graph',
+  selector: 'd3-polygons',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <svg #svg [attr.width]="_options.width" [attr.height]="_options.height">
       <g [zoomableOf]="svg">
-        <g [linkVisual]="link" *ngFor="let link of links"></g>
         <g [polygonVisual]="p"  *ngFor="let p of polygons" ></g>
-        <g [nodeVisual]="node" *ngFor="let node of nodes"
-            [draggableNode]="node" [draggableInGraph]="graph"></g>
       </g>
     </svg>
   `
 })
-export class GraphComponent implements OnInit, AfterViewInit {
-  @Input('nodes') nodes;
-  @Input('links') links;
-  @Input('polygons') polygons;
-  //@Input('links') pointss;
-  
-  //points = [{"x":"20","y":"40"},{"x":"70","y":"90"},{"x":"10","y":"100"}];
+export class D3PolygonsComponent implements OnInit, AfterViewInit {
 
-  graph: ForceDirectedGraph;
-  private _options: { width, height } = { width: 800, height: 600 };
+  @Input('polygons') polygons;
+
+  private _options: { width, height } = { width: 400, height: 400 };
+
+  graph: PolygonDraw;
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    this.graph.initSimulation(this.options);
+    //this.graph.initSimulation(this.options);
   }
 
 
@@ -37,7 +31,7 @@ export class GraphComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     /** Receiving an initialized simulated graph from our custom d3 service */
-    this.graph = this.d3Service.getForceDirectedGraph(this.nodes, this.links, this.polygons, this.options);
+    this.graph = this.d3Service.getPolygonDraw( this.polygons, this.options);
 
     /** Binding change detection check on each tick
      * This along with an onPush change detection strategy should enforce checking only when relevant!

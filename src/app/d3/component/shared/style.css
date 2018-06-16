@@ -25,3 +25,11 @@
     stroke-width: .25em;
     stroke: rgb(25, 212, 8);
 }
+
+
+.polygon-text {
+ 
+   
+    font-weight: 300;
+    fill: white;
+  }

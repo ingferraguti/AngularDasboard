@@ -3,7 +3,7 @@ import { TableComponent } from './shared/table.component';
 import { MenuVoice } from './shared/Interfaces';
 
 import APP_CONFIG from './app.config';
-import { Node, Link } from './d3/model/D3Model';
+import { Node, Link, Polygon } from './d3/model/D3Model';
 
 
 @Component({
@@ -77,10 +77,14 @@ export class AppComponent {
 
     nodes: Node[] = [];
     links: Link[] = [];
+    polygons: Polygon[];
   
     constructor() {
 
-      
+      this.polygons= [ 
+        new Polygon([{"x":50,"y":50},{"x":200,"y":400},{"x":400,"y":100}]),
+        new Polygon([{"x":200,"y":400},{"x":650,"y":400},{"x":550,"y":100},{"x":400,"y":100}])
+      ];
 
       const N = APP_CONFIG.N,
             getIndex = number => number - 1;
