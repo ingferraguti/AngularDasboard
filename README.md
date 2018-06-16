@@ -1,5 +1,7 @@
 # AngularDasboard
 
+Angular + bootsrap + D3.js + morris.js
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.7.
 
 ## Development server
@@ -9,6 +11,20 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+
+## Screenshot
+
+![angular d3 dashboard](https://user-images.githubusercontent.com/11466961/41501093-e39d029c-719d-11e8-8714-2dbabb91b362.png)
+
+
+
+
+
+
+
+
+
 
 ## Build
 
